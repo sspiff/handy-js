@@ -1,0 +1,26 @@
+{
+  "name": "@sspiff/handy",
+  "version": "1.0.0",
+  "description": "Handy bits of javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sspiff/handy-js.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "sspiff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sspiff/handy-js/issues"
+  },
+  "homepage": "https://github.com/sspiff/handy-js#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.7",
+    "jest": "^24.9.0"
+  }
+}
