@@ -50,6 +50,27 @@ const lruCache = maxCount => {
   }
 }
 
+/**
+ * Returns a memoized function with a given cache entry count limit.
+ * When the count limit is reached, existing entries are replaced
+ * least-recently-used first.
+ *
+ * Uses `fast-memoize` under the hood.  Callers can provide `fast-memoize`
+ * options (other than a cache) via the optional `options` parameter.
+ *
+ * @function lruMemoize
+ * @memberof module:@sspiff/handy
+ * @param {number} maxCount - Maximum number of cache entries
+ * @param {function} f - Function to memoize
+ * @param {Object} [options={}] - Additional options for `fast-memoize`
+ * @returns {function}
+ * @example
+ *
+ * import {lruMemoize} from '@sspiff/handy'
+ *
+ * f = lruMemoize(10, x => x)
+ * f('hello')  // => 'hello'
+ */
 export default (maxCount, f, options={}) => memoize(f, {
   ...options,
   cache: {create: () => lruCache(maxCount)}
