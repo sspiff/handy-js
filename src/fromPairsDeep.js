@@ -60,8 +60,10 @@
  * //      'prefix': 'somepathprefix'
  * //    }
  */
+const invalidKeys = ['__proto__', 'constructor', 'prototype']
 export default (pairs, sep, prefix='') => (
   pairs.filter(([k, v]) => k.startsWith(prefix))
+    .filter(([k, v]) => invalidKeys.every(x => !k.includes(x)))
     .reduce((top, [k, v]) => (
       k.slice(prefix.length).split(sep).reduce((parent, c, i, a) => {
         if (i === 0 && c === '') {

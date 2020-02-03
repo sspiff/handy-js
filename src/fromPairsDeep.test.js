@@ -78,5 +78,11 @@ describe('fromPairsDeep', () => {
         'prefixed': 'somepathprefixed',
       })
   })
+  test('does not allow prototype pollution', () => {
+    fromPairsDeep([['__proto__.foo', 'foo']], '.')
+    expect(({}).foo).toBe(undefined)
+    fromPairsDeep([['constructor.prototype.foo', 'foo']], '.')
+    expect(({}).foo).toBe(undefined)
+  })
 })
 
