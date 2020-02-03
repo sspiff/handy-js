@@ -1,5 +1,5 @@
 
-import fromPairsDeep from './fromPairsDeep'
+import fromPairsDeep from '../src/fromPairsDeep'
 
 describe('fromPairsDeep', () => {
   test('seems to work', () => {

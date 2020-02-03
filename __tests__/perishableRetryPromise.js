@@ -1,5 +1,5 @@
 
-import perishableRetryPromise from './perishableRetryPromise'
+import perishableRetryPromise from '../src/perishableRetryPromise'
 
 describe('perishableRetryPromise', () => {
 

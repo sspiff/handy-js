@@ -1,5 +1,5 @@
 
-import perishable from './perishable'
+import perishable from '../src/perishable'
 
 describe('perishable', () => {
 

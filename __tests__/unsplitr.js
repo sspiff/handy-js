@@ -1,5 +1,5 @@
 
-import unsplitr from './unsplitr'
+import unsplitr from '../src/unsplitr'
 
 describe('unsplitr', () => {
   test('joins all items', () => {

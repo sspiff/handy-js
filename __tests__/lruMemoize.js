@@ -1,5 +1,5 @@
 
-import lruMemoize from './lruMemoize'
+import lruMemoize from '../src/lruMemoize'
 
 describe('lruMemoize', () => {
 
