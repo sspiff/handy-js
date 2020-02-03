@@ -1,13 +1,13 @@
 
-import * as handy from '.'
+import * as handy from '..'
 
-import fromPairsDeep from './src/fromPairsDeep'
-import lruMemoize from './src/lruMemoize'
-import perishable from './src/perishable'
-import perishableRetryPromise from './src/perishableRetryPromise'
-import pipe from './src/pipe'
-import unsplitl from './src/unsplitl'
-import unsplitr from './src/unsplitr'
+import fromPairsDeep from './fromPairsDeep'
+import lruMemoize from './lruMemoize'
+import perishable from './perishable'
+import perishableRetryPromise from './perishableRetryPromise'
+import pipe from './pipe'
+import unsplitl from './unsplitl'
+import unsplitr from './unsplitr'
 
 describe('handy', () => {
   test('has fromPairsDeep', () => {
