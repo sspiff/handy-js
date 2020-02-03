@@ -6,6 +6,7 @@
   "files": [
     "src/*"
   ],
+  "sideEffects": false,
   "scripts": {
     "test": "jest"
   },
