@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Handy bits of javascript",
   "main": "src/index.js",
+  "files": [
+    "src/*"
+  ],
   "scripts": {
     "test": "jest"
   },
