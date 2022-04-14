@@ -1,6 +1,6 @@
 {
   "name": "@sspiff/handy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Handy bits of javascript",
   "main": "src/index.js",
   "files": [
