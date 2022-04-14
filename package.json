@@ -25,7 +25,7 @@
   "homepage": "https://github.com/sspiff/handy-js#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.7.7",
-    "jest": "^25.5.2"
+    "jest": "^27.5.1"
   },
   "dependencies": {
     "fast-memoize": "^2.5.1"
